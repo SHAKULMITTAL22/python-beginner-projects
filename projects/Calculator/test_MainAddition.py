@@ -121,6 +121,8 @@ Validation:
 These scenarios cover a comprehensive set of cases to validate the business logic of the `addition` function, ensuring it handles typical, edge, and erroneous inputs effectively.
 
 roost_feedback [5/23/2024, 12:43:32 PM]:Add more comments in the file 
+
+roost_feedback [5/23/2024, 12:46:37 PM]:Add more comments in the file
 """
 
 # ********RoostGPT********
@@ -260,6 +262,7 @@ class Test_MainAddition:
         user_input = "1 2 3 4 5"
         expected_result = 15
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and call the addition function
             assert addition() == expected_result
 
     @pytest.mark.positive
@@ -268,6 +271,7 @@ class Test_MainAddition:
         user_input = "-1 -2 -3 -4 -5"
         expected_result = -15
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and call the addition function
             assert addition() == expected_result
 
     @pytest.mark.positive
@@ -276,6 +280,7 @@ class Test_MainAddition:
         user_input = "1 -2 3 -4 5"
         expected_result = 3
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and call the addition function
             assert addition() == expected_result
 
     @pytest.mark.positive
@@ -284,6 +289,7 @@ class Test_MainAddition:
         user_input = "0 0 0"
         expected_result = 0
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and call the addition function
             assert addition() == expected_result
 
     @pytest.mark.positive
@@ -292,6 +298,7 @@ class Test_MainAddition:
         user_input = "5"
         expected_result = 5
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and call the addition function
             assert addition() == expected_result
 
     @pytest.mark.positive
@@ -300,6 +307,7 @@ class Test_MainAddition:
         user_input = "1000000 2000000 3000000"
         expected_result = 6000000
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and call the addition function
             assert addition() == expected_result
 
     @pytest.mark.negative
@@ -307,6 +315,7 @@ class Test_MainAddition:
         # Test with no input provided
         user_input = ""  # Simulate no input
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and expect a ValueError
             with pytest.raises(ValueError):
                 addition()
 
@@ -315,6 +324,7 @@ class Test_MainAddition:
         # Test with non-numeric input
         user_input = "a b c"
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and expect a ValueError
             with pytest.raises(ValueError):
                 addition()
 
@@ -323,6 +333,7 @@ class Test_MainAddition:
         # Test with mixed numeric and non-numeric input
         user_input = "1 2 a"
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and expect a ValueError
             with pytest.raises(ValueError):
                 addition()
 
@@ -332,4 +343,5 @@ class Test_MainAddition:
         user_input = " 1 2 3 "
         expected_result = 6
         with patch('builtins.input', return_value=user_input):
+            # Simulate user input and call the addition function
             assert addition() == expected_result
