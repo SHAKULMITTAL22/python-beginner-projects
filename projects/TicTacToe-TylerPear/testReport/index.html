@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">index.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">index.html</h1>
+    <p>Report generated on 15-Jul-2024 at 07:09:32 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">89 tests took 154 ms.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">30 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">59 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.11.8&#34;, &#34;Platform&#34;: &#34;Linux-5.15.0-1037-gcp-x86_64-with&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.2.2&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;metadata&#34;: &#34;3.1.1&#34;, &#34;html&#34;: &#34;4.1.1&#34;}}, &#34;tests&#34;: {&#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_valid_move_empty_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_valid_move_empty_board&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_valid_move_empty_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cf4a190&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_valid_move_empty_board(self, empty_board):\n&amp;gt;       result = module.change_board(&amp;quot;TL&amp;quot;, empty_board.copy(), &amp;quot;X&amp;quot;)\n\ntest_MainChangeBoard.py:116: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:69: in change_board\n    taken = examine_move(board, 0, 0, f&amp;quot; {player}|&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\nx = 0, y = 0, msg = &amp;#x27; X|&amp;#x27;\n\n    def examine_move(board, x, y, msg):\n        taken = False\n    \n        if &amp;quot;X&amp;quot; in board[x][y] or &amp;quot;O&amp;quot; in board[x][y]:\n            taken = True\n        else:\n&amp;gt;           board[x][y] = msg\nE           TypeError: &amp;#x27;str&amp;#x27; object does not support item assignment\n\nmain.py:58: TypeError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_move_on_occupied_position&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_move_on_occupied_position&#34;, &#34;duration&#34;: &#34;4 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_move_on_occupied_position&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;4 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb33dd0&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_move_on_occupied_position(self, empty_board):\n        board = empty_board.copy()\n        board[0] = &amp;quot; X |   |   &amp;quot;\n    \n        with patch(&amp;#x27;builtins.input&amp;#x27;, return_value=&amp;quot;TM&amp;quot;):\n&amp;gt;           result = module.change_board(&amp;quot;TL&amp;quot;, board, &amp;quot;O&amp;quot;)\n\ntest_MainChangeBoard.py:125: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:69: in change_board\n    taken = examine_move(board, 0, 0, f&amp;quot; {player}|&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [&amp;#x27; X |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\nx = 0, y = 0, msg = &amp;#x27; O|&amp;#x27;\n\n    def examine_move(board, x, y, msg):\n        taken = False\n    \n        if &amp;quot;X&amp;quot; in board[x][y] or &amp;quot;O&amp;quot; in board[x][y]:\n            taken = True\n        else:\n&amp;gt;           board[x][y] = msg\nE           TypeError: &amp;#x27;str&amp;#x27; object does not support item assignment\n\nmain.py:58: TypeError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_multiple_valid_moves&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_multiple_valid_moves&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_multiple_valid_moves&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb4d250&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_multiple_valid_moves(self, empty_board):\n        board = empty_board.copy()\n&amp;gt;       board = module.change_board(&amp;quot;TL&amp;quot;, board, &amp;quot;X&amp;quot;)\n\ntest_MainChangeBoard.py:132: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:69: in change_board\n    taken = examine_move(board, 0, 0, f&amp;quot; {player}|&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\nx = 0, y = 0, msg = &amp;#x27; X|&amp;#x27;\n\n    def examine_move(board, x, y, msg):\n        taken = False\n    \n        if &amp;quot;X&amp;quot; in board[x][y] or &amp;quot;O&amp;quot; in board[x][y]:\n            taken = True\n        else:\n&amp;gt;           board[x][y] = msg\nE           TypeError: &amp;#x27;str&amp;#x27; object does not support item assignment\n\nmain.py:58: TypeError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_all_board_positions&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_all_board_positions&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_all_board_positions&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb4d990&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_all_board_positions(self, empty_board):\n        moves = [&amp;quot;TL&amp;quot;, &amp;quot;TM&amp;quot;, &amp;quot;TR&amp;quot;, &amp;quot;ML&amp;quot;, &amp;quot;MM&amp;quot;, &amp;quot;MR&amp;quot;, &amp;quot;BL&amp;quot;, &amp;quot;BM&amp;quot;, &amp;quot;BR&amp;quot;]\n        board = empty_board.copy()\n    \n        for i, move in enumerate(moves):\n            player = &amp;quot;X&amp;quot; if i % 2 == 0 else &amp;quot;O&amp;quot;\n&amp;gt;           board = module.change_board(move, board, player)\n\ntest_MainChangeBoard.py:147: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:69: in change_board\n    taken = examine_move(board, 0, 0, f&amp;quot; {player}|&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\nx = 0, y = 0, msg = &amp;#x27; X|&amp;#x27;\n\n    def examine_move(board, x, y, msg):\n        taken = False\n    \n        if &amp;quot;X&amp;quot; in board[x][y] or &amp;quot;O&amp;quot; in board[x][y]:\n            taken = True\n        else:\n&amp;gt;           board[x][y] = msg\nE           TypeError: &amp;#x27;str&amp;#x27; object does not support item assignment\n\nmain.py:58: TypeError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_alternating_players&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_alternating_players&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_alternating_players&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb4e090&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_alternating_players(self, empty_board):\n        board = empty_board.copy()\n        moves = [&amp;quot;TL&amp;quot;, &amp;quot;MM&amp;quot;, &amp;quot;BR&amp;quot;, &amp;quot;TM&amp;quot;]\n        players = [&amp;quot;X&amp;quot;, &amp;quot;O&amp;quot;, &amp;quot;X&amp;quot;, &amp;quot;O&amp;quot;]\n    \n        for move, player in zip(moves, players):\n&amp;gt;           board = module.change_board(move, board, player)\n\ntest_MainChangeBoard.py:160: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:69: in change_board\n    taken = examine_move(board, 0, 0, f&amp;quot; {player}|&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\nx = 0, y = 0, msg = &amp;#x27; X|&amp;#x27;\n\n    def examine_move(board, x, y, msg):\n        taken = False\n    \n        if &amp;quot;X&amp;quot; in board[x][y] or &amp;quot;O&amp;quot; in board[x][y]:\n            taken = True\n        else:\n&amp;gt;           board[x][y] = msg\nE           TypeError: &amp;#x27;str&amp;#x27; object does not support item assignment\n\nmain.py:58: TypeError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_move_input&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_move_input&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_move_input&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb4e790&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_invalid_move_input(self, empty_board):\n        with patch(&amp;#x27;builtins.input&amp;#x27;, return_value=&amp;quot;TL&amp;quot;):\n            result = module.change_board(&amp;quot;INVALID&amp;quot;, empty_board.copy(), &amp;quot;X&amp;quot;)\n    \n&amp;gt;       assert result[0] == &amp;quot; X |   |   &amp;quot;\nE       AssertionError: assert &amp;#x27;   |   |   &amp;#x27; == &amp;#x27; X |   |   &amp;#x27;\nE         \nE         -  X |   |   \nE         ?  ^\nE         +    |   |   \nE         ?  ^\n\ntest_MainChangeBoard.py:171: AssertionError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_full_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_full_board&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_full_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb4ee50&amp;gt;\n\n    def test_full_board(self):\n        full_board = [\n            &amp;quot; X | O |X  &amp;quot;,\n            &amp;quot;---+---+---&amp;quot;,\n            &amp;quot; O | X |O  &amp;quot;,\n            &amp;quot;---+---+---&amp;quot;,\n            &amp;quot; X | O |X  &amp;quot;\n        ]\n    \n        with patch(&amp;#x27;builtins.input&amp;#x27;, return_value=&amp;quot;TL&amp;quot;):\n&amp;gt;           result = module.change_board(&amp;quot;TL&amp;quot;, full_board.copy(), &amp;quot;O&amp;quot;)\n\ntest_MainChangeBoard.py:184: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:69: in change_board\n    taken = examine_move(board, 0, 0, f&amp;quot; {player}|&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [&amp;#x27; X | O |X  &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27; O | X |O  &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27; X | O |X  &amp;#x27;]\nx = 0, y = 0, msg = &amp;#x27; O|&amp;#x27;\n\n    def examine_move(board, x, y, msg):\n        taken = False\n    \n        if &amp;quot;X&amp;quot; in board[x][y] or &amp;quot;O&amp;quot; in board[x][y]:\n            taken = True\n        else:\n&amp;gt;           board[x][y] = msg\nE           TypeError: &amp;#x27;str&amp;#x27; object does not support item assignment\n\nmain.py:58: TypeError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_empty_move&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_empty_move&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_empty_move&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb4f550&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_empty_move(self, empty_board):\n&amp;gt;       with pytest.raises(Exception):  # Expecting some kind of exception for empty move\nE       Failed: DID NOT RAISE &amp;lt;class &amp;#x27;Exception&amp;#x27;&amp;gt;\n\ntest_MainChangeBoard.py:192: Failed\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_none_move&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_none_move&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_none_move&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangeBoard.TestMainChangeBoard object at 0x7faf4cb4fc50&amp;gt;\nempty_board = [&amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;, &amp;#x27;---+---+---&amp;#x27;, &amp;#x27;   |   |   &amp;#x27;]\n\n    def test_none_move(self, empty_board):\n&amp;gt;       with pytest.raises(Exception):  # Expecting some kind of exception for None move\nE       Failed: DID NOT RAISE &amp;lt;class &amp;#x27;Exception&amp;#x27;&amp;gt;\n\ntest_MainChangeBoard.py:197: Failed\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_player&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_player&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_player&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest invalid_player passed\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangeBoard.py::TestMainChangeBoard::test_invalid_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest invalid_board passed\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_even_input&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_even_input&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_even_input&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Even input returns &amp;#x27;O&amp;#x27;\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_odd_input&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_odd_input&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_odd_input&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Odd input returns &amp;#x27;X&amp;#x27;\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_multiple_even_inputs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_multiple_even_inputs&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_multiple_even_inputs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Multiple even inputs consistently return &amp;#x27;O&amp;#x27;\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_multiple_odd_inputs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_multiple_odd_inputs&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_multiple_odd_inputs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Multiple odd inputs consistently return &amp;#x27;X&amp;#x27;\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_alternating_sequence&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_alternating_sequence&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_alternating_sequence&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainChangePlayer.TestMainChangePlayer object at 0x7faf4cbb7110&amp;gt;\n\n    def test_change_player_alternating_sequence(self):\n        expected_sequence = [&amp;quot;X&amp;quot;, &amp;quot;O&amp;quot;] * 5\n        for i, expected in enumerate(expected_sequence):\n&amp;gt;           assert module.change_player(i) == expected\nE           AssertionError: assert &amp;#x27;O&amp;#x27; == &amp;#x27;X&amp;#x27;\nE             \nE             - X\nE             + O\n\ntest_MainChangePlayer.py:140: AssertionError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_zero_input&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_zero_input&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_zero_input&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Zero input returns &amp;#x27;O&amp;#x27;\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_large_numbers&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_large_numbers&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_large_numbers&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Large number inputs handled correctly\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_negative_numbers&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_negative_numbers&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_negative_numbers&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Negative number inputs handled correctly\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_type_error&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_type_error&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_type_error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Non-integer input raises TypeError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[2-O]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[2-O]&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[2-O]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Input 2 returns O\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[1-X]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[1-X]&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[1-X]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Input 1 returns X\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[0-O]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[0-O]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[0-O]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Input 0 returns O\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[-1-X]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[-1-X]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[-1-X]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Input -1 returns X\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[100-O]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[100-O]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[100-O]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Input 100 returns O\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[99-X]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[99-X]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainChangePlayer.py::TestMainChangePlayer::test_change_player_parametrized[99-X]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTest: Input 99 returns X\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_top_row&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_top_row&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_top_row&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_middle_row&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_middle_row&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_middle_row&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_bottom_row&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_bottom_row&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_horizontal_win_bottom_row&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_left_column&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_left_column&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_left_column&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_middle_column&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_middle_column&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_middle_column&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_right_column&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_right_column&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_vertical_win_right_column&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_diagonal_win_top_left_to_bottom_right&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_diagonal_win_top_left_to_bottom_right&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_diagonal_win_top_left_to_bottom_right&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_diagonal_win_top_right_to_bottom_left&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_diagonal_win_top_right_to_bottom_left&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_diagonal_win_top_right_to_bottom_left&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_no_win_condition&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_no_win_condition&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_no_win_condition&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_empty_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_empty_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_empty_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_partial_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_partial_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_partial_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_full_board_no_win&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_full_board_no_win&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCheckForWin.py::TestMainCheckForWin::test_full_board_no_win&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_valid_input_first_attempt&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_valid_input_first_attempt&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_valid_input_first_attempt&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_invalid_then_valid_input&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_invalid_then_valid_input&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_invalid_then_valid_input&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_multiple_invalid_inputs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_multiple_invalid_inputs&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_multiple_invalid_inputs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_case_sensitivity&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_case_sensitivity&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_case_sensitivity&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_first_valid_move&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_first_valid_move&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_first_valid_move&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_last_valid_move&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_last_valid_move&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_last_valid_move&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_input_with_whitespace&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_input_with_whitespace&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_input_with_whitespace&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_empty_input&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_empty_input&#34;, &#34;duration&#34;: &#34;4 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_empty_input&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;4 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_player_number_display&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_player_number_display&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_player_number_display&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainCollectInput.TestMainCollectInput object at 0x7faf4cb89010&amp;gt;\n\n    def test_player_number_display(self):\n        with patch(&amp;#x27;builtins.input&amp;#x27;, return_value=&amp;#x27;MM&amp;#x27;):\n            module.collect_input(1)\n&amp;gt;       assert &amp;quot;Player 1, Type Your Move:&amp;quot; in self.held_output.getvalue()\nE       AssertionError: assert &amp;#x27;Player 1, Type Your Move:&amp;#x27; in &amp;#x27;&amp;#x27;\nE        +  where &amp;#x27;&amp;#x27; = &amp;lt;built-in method getvalue of _io.StringIO object at 0x7faf4cb575b0&amp;gt;()\nE        +    where &amp;lt;built-in method getvalue of _io.StringIO object at 0x7faf4cb575b0&amp;gt; = &amp;lt;_io.StringIO object at 0x7faf4cb575b0&amp;gt;.getvalue\nE        +      where &amp;lt;_io.StringIO object at 0x7faf4cb575b0&amp;gt; = &amp;lt;test_MainCollectInput.TestMainCollectInput object at 0x7faf4cb89010&amp;gt;.held_output\n\ntest_MainCollectInput.py:168: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_instructions_display&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_instructions_display&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_instructions_display&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainCollectInput.TestMainCollectInput object at 0x7faf4cb88650&amp;gt;\n\n    def test_instructions_display(self):\n        with patch(&amp;#x27;builtins.input&amp;#x27;, return_value=&amp;#x27;BL&amp;#x27;):\n            module.collect_input(2)\n        output = self.held_output.getvalue()\n&amp;gt;       assert &amp;quot;KEY: TL = Top Left, TM = Top Middle, TR = Top Right&amp;quot; in output\nE       AssertionError: assert &amp;#x27;KEY: TL = Top Left, TM = Top Middle, TR = Top Right&amp;#x27; in &amp;#x27;&amp;#x27;\n\ntest_MainCollectInput.py:174: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_invalid_input_prompt&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_invalid_input_prompt&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_invalid_input_prompt&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainCollectInput.TestMainCollectInput object at 0x7faf4d8b9cd0&amp;gt;\n\n    def test_invalid_input_prompt(self):\n        with patch(&amp;#x27;builtins.input&amp;#x27;, side_effect=[&amp;#x27;INVALID&amp;#x27;, &amp;#x27;BM&amp;#x27;]):\n            module.collect_input(1)\n&amp;gt;       assert &amp;quot;Type a valid move:&amp;quot; in self.held_output.getvalue()\nE       AssertionError: assert &amp;#x27;Type a valid move:&amp;#x27; in &amp;#x27;&amp;#x27;\nE        +  where &amp;#x27;&amp;#x27; = &amp;lt;built-in method getvalue of _io.StringIO object at 0x7faf4c9d89d0&amp;gt;()\nE        +    where &amp;lt;built-in method getvalue of _io.StringIO object at 0x7faf4c9d89d0&amp;gt; = &amp;lt;_io.StringIO object at 0x7faf4c9d89d0&amp;gt;.getvalue\nE        +      where &amp;lt;_io.StringIO object at 0x7faf4c9d89d0&amp;gt; = &amp;lt;test_MainCollectInput.TestMainCollectInput object at 0x7faf4d8b9cd0&amp;gt;.held_output\n\ntest_MainCollectInput.py:181: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TL]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TL]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TL]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TM]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TM]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TM]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TR]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TR]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[TR]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[ML]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[ML]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[ML]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[MM]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[MM]&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[MM]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[MR]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[MR]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[MR]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BL]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BL]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BL]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BM]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BM]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BM]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BR]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BR]&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_all_valid_moves[BR]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_input_function_called&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_input_function_called&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_input_function_called&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_return_type&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_return_type&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainCollectInput.py::TestMainCollectInput::test_return_type&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nKEY: TL = Top Left, TM = Top Middle, TR = Top Right\n     ML = Middle Left, MM = Middle Middle, MR = Middle Right\n     BL = Bottom Left, BM = Bottom Middle, BR = Bottom Right\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_empty_cell&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_empty_cell&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_empty_cell&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_occupied_cell&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_occupied_cell&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_occupied_cell&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_board_edge&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_board_edge&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_board_edge&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_in_board_center&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_in_board_center&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_in_board_center&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_consecutive_moves_different_players&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_consecutive_moves_different_players&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_consecutive_moves_different_players&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_attempt_to_overwrite_move&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_attempt_to_overwrite_move&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_attempt_to_overwrite_move&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_full_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_full_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_move_on_full_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_invalid_coordinates&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_invalid_coordinates&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_invalid_coordinates&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_non_string_message&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_non_string_message&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_non_string_message&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_empty_string_message&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_empty_string_message&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainExamineMove.py::TestMainExamineMove::test_empty_string_message&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_horizontally&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_horizontally&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_horizontally&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4d8b7e50&amp;gt;\n\n    def test_x_wins_horizontally(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == True\n\ntest_MainPlayerWon.py:122: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;], [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_o_wins_vertically&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_o_wins_vertically&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_o_wins_vertically&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc2990&amp;gt;\n\n    def test_o_wins_vertically(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == True\n\ntest_MainPlayerWon.py:130: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;], [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;], [&amp;#x27; &amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_diagonally&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_diagonally&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_diagonally&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc2f10&amp;gt;\n\n    def test_x_wins_diagonally(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27;X&amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == True\n\ntest_MainPlayerWon.py:138: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27;X&amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_no_winner&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_no_winner&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_no_winner&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc2d90&amp;gt;\n\n    def test_no_winner(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == False\n\ntest_MainPlayerWon.py:146: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;], [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_empty_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_empty_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_empty_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc0fd0&amp;gt;\n\n    def test_empty_board(self):\n        board = [\n            [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == False\n\ntest_MainPlayerWon.py:154: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;], [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;], [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_full_board_draw&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_full_board_draw&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_full_board_draw&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc0750&amp;gt;\n\n    def test_full_board_draw(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == False\n\ntest_MainPlayerWon.py:162: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;], [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_on_last_move&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_on_last_move&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_x_wins_on_last_move&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc0110&amp;gt;\n\n    def test_x_wins_on_last_move(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == True\n\ntest_MainPlayerWon.py:170: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;X&amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_multiple_win_lines&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_multiple_win_lines&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_multiple_win_lines&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc3a10&amp;gt;\n\n    def test_multiple_win_lines(self):\n        board = [\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;]\n        ]\n&amp;gt;       assert module.player_won(board) == True\n\ntest_MainPlayerWon.py:178: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;O&amp;#x27;], [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;], [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_invalid_board_size&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_invalid_board_size&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_invalid_board_size&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc1590&amp;gt;\n\n    def test_invalid_board_size(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;]\n        ]\n        with pytest.raises(ValueError):\n&amp;gt;           module.player_won(board)\n\ntest_MainPlayerWon.py:186: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:111: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_invalid_characters&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_invalid_characters&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_invalid_characters&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cbc0190&amp;gt;\n\n    def test_invalid_characters(self):\n        board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;A&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;]\n        ]\n        with pytest.raises(ValueError):\n&amp;gt;           module.player_won(board)\n\ntest_MainPlayerWon.py:195: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [[&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;A&amp;#x27;], [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;], [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;]], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n        if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n        elif board[2] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\n            return True\n&amp;gt;       elif board[4] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:113: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_none_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_none_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_none_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_empty_list_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_empty_list_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPlayerWon.py::TestMainPlayerWon::test_empty_list_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPlayerWon.TestMainPlayerWon object at 0x7faf4cb4f790&amp;gt;\n\n    def test_empty_list_board(self):\n        with pytest.raises(ValueError):\n&amp;gt;           module.player_won([])\n\ntest_MainPlayerWon.py:203: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nmain.py:155: in player_won\n    xwon = check_for_win(board, &amp;quot;X&amp;quot;)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nboard = [], player = &amp;#x27;X&amp;#x27;\n\n    def check_for_win(board, player):\n        # Check Lists\n&amp;gt;       if board[0] == [f&amp;quot; {player}|&amp;quot;, f&amp;quot; {player} | &amp;quot;, f&amp;quot;{player}&amp;quot;]:\nE       IndexError: list index out of range\n\nmain.py:109: IndexError\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_empty_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_empty_board&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_empty_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPrintBoard.TestMainPrintBoard object at 0x7faf4cbdcf10&amp;gt;\n\n    def test_print_empty_board(self):\n        module.board = [[&amp;#x27; &amp;#x27; for _ in range(3)] for _ in range(5)]\n        module.print_board()\n        expected_output = &amp;quot;   \\n   \\n   \\n   \\n   \\n\\n&amp;quot;\n&amp;gt;       assert self.output.getvalue() == expected_output\nE       AssertionError: assert &amp;#x27;&amp;#x27; == &amp;#x27;   \\n   \\n   \\n   \\n   \\n\\n&amp;#x27;\nE         \nE         Strings contain only whitespace, escaping them using repr()\nE         - &amp;#x27;   \\n   \\n   \\n   \\n   \\n\\n&amp;#x27;\nE         + &amp;#x27;&amp;#x27;\n\ntest_MainPrintBoard.py:95: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\n   \n   \n   \n   \n   \n\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_partially_filled_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_partially_filled_board&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_partially_filled_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPrintBoard.TestMainPrintBoard object at 0x7faf4cbdedd0&amp;gt;\n\n    def test_print_partially_filled_board(self):\n        module.board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27; &amp;#x27;]\n        ]\n        module.print_board()\n        expected_output = &amp;quot;XO \\n X \\nO X\\n  O\\nX  \\n\\n&amp;quot;\n&amp;gt;       assert self.output.getvalue() == expected_output\nE       AssertionError: assert &amp;#x27;&amp;#x27; == &amp;#x27;XO \\n X \\nO X\\n  O\\nX  \\n\\n&amp;#x27;\nE         \nE         - XO \nE         -  X \nE         - O X\nE         -   O\nE         - X  \nE         -\n\ntest_MainPrintBoard.py:107: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nXO \n X \nO X\n  O\nX  \n\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_full_board&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_full_board&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_full_board&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPrintBoard.TestMainPrintBoard object at 0x7faf4cbdd2d0&amp;gt;\n\n    def test_print_full_board(self):\n        module.board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27;X&amp;#x27;]\n        ]\n        module.print_board()\n        expected_output = &amp;quot;XOX\\nOXO\\nXOX\\nOXO\\nXOX\\n\\n&amp;quot;\n&amp;gt;       assert self.output.getvalue() == expected_output\nE       AssertionError: assert &amp;#x27;&amp;#x27; == &amp;#x27;XOX\\nOXO\\nXOX\\nOXO\\nXOX\\n\\n&amp;#x27;\nE         \nE         - XOX\nE         - OXO\nE         - XOX\nE         - OXO\nE         - XOX\nE         -\n\ntest_MainPrintBoard.py:119: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nXOX\nOXO\nXOX\nOXO\nXOX\n\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_spacing&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_spacing&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_spacing&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPrintBoard.TestMainPrintBoard object at 0x7faf4cbdf710&amp;gt;\n\n    def test_print_board_spacing(self):\n        module.board = [\n            [&amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27;O&amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27;X&amp;#x27;],\n            [&amp;#x27; &amp;#x27;, &amp;#x27;O&amp;#x27;, &amp;#x27; &amp;#x27;],\n            [&amp;#x27;X&amp;#x27;, &amp;#x27; &amp;#x27;, &amp;#x27;O&amp;#x27;]\n        ]\n        module.print_board()\n        expected_output = &amp;quot;X O\\n X \\nO X\\n O \\nX O\\n\\n&amp;quot;\n&amp;gt;       assert self.output.getvalue() == expected_output\nE       AssertionError: assert &amp;#x27;&amp;#x27; == &amp;#x27;X O\\n X \\nO X\\n O \\nX O\\n\\n&amp;#x27;\nE         \nE         - X O\nE         -  X \nE         - O X\nE         -  O \nE         - X O\nE         -\n\ntest_MainPrintBoard.py:131: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nX O\n X \nO X\n O \nX O\n\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_no_trailing_newline&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_no_trailing_newline&#34;, &#34;duration&#34;: &#34;3 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_no_trailing_newline&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;3 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPrintBoard.TestMainPrintBoard object at 0x7faf4cbded50&amp;gt;\n\n    def test_print_board_no_trailing_newline(self):\n        module.board = [[&amp;#x27; &amp;#x27; for _ in range(3)] for _ in range(5)]\n        module.print_board()\n&amp;gt;       assert self.output.getvalue().endswith(&amp;#x27;\\n\\n&amp;#x27;)\nE       AssertionError: assert False\nE        +  where False = &amp;lt;built-in method endswith of str object at 0x7faf4ef13040&amp;gt;(&amp;#x27;\\n\\n&amp;#x27;)\nE        +    where &amp;lt;built-in method endswith of str object at 0x7faf4ef13040&amp;gt; = &amp;#x27;&amp;#x27;.endswith\nE        +      where &amp;#x27;&amp;#x27; = &amp;lt;built-in method getvalue of _io.StringIO object at 0x7faf4c9d9ab0&amp;gt;()\nE        +        where &amp;lt;built-in method getvalue of _io.StringIO object at 0x7faf4c9d9ab0&amp;gt; = &amp;lt;_io.StringIO object at 0x7faf4c9d9ab0&amp;gt;.getvalue\nE        +          where &amp;lt;_io.StringIO object at 0x7faf4c9d9ab0&amp;gt; = &amp;lt;test_MainPrintBoard.TestMainPrintBoard object at 0x7faf4cbded50&amp;gt;.output\n\ntest_MainPrintBoard.py:136: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\n   \n   \n   \n   \n   \n\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_with_special_characters&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_with_special_characters&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_with_special_characters&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_MainPrintBoard.TestMainPrintBoard object at 0x7faf4cbdd3d0&amp;gt;\n\n    def test_print_board_with_special_characters(self):\n        module.board = [\n            [&amp;#x27;@&amp;#x27;, &amp;#x27;#&amp;#x27;, &amp;#x27;$&amp;#x27;],\n            [&amp;#x27;%&amp;#x27;, &amp;#x27;&amp;amp;&amp;#x27;, &amp;#x27;*&amp;#x27;],\n            [&amp;#x27;!&amp;#x27;, &amp;#x27;?&amp;#x27;, &amp;#x27;=&amp;#x27;],\n            [&amp;#x27;+&amp;#x27;, &amp;#x27;-&amp;#x27;, &amp;#x27;/&amp;#x27;],\n            [&amp;#x27;\\\\&amp;#x27;, &amp;#x27;|&amp;#x27;, &amp;#x27;~&amp;#x27;]\n        ]\n        module.print_board()\n        expected_output = &amp;quot;@#$\\n%&amp;amp;*\\n!?=\\n+-/\\n\\\\|~\\n\\n&amp;quot;\n&amp;gt;       assert self.output.getvalue() == expected_output\nE       AssertionError: assert &amp;#x27;&amp;#x27; == &amp;#x27;@#$\\n%&amp;amp;*\\n!?=\\n+-/\\n\\\\|~\\n\\n&amp;#x27;\nE         \nE         - @#$\nE         - %&amp;amp;*\nE         - !?=\nE         - +-/\nE         - \\|~\nE         -\n\ntest_MainPrintBoard.py:149: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\n@#$\n%&amp;amp;*\n!?=\n+-/\n\\|~\n\n&#34;}], &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_consistency&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_consistency&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;projects/TicTacToe-TylerPear/test_MainPrintBoard.py::TestMainPrintBoard::test_print_board_consistency&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nXOX\nOXO\nXOX\nOXO\nXOX\n\nXOX\nOXO\nXOX\nOXO\nXOX\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;index.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
